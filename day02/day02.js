@@ -28,7 +28,6 @@ const part1 = input => {
 const part2 = input => {
     let validPasswords = 0
     for (let entry of input) {
-        let letterCounted = entry.password.filter(letter => letter === entry.letter).length
         let validPosition = 0
         if (entry.password[entry.min - 1] === entry.letter) {
             validPosition += 1
